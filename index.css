@@ -1,0 +1,320 @@
+ 
+body{
+  background-image:url("grass.jpg");
+    margin : 0;
+    min-width: 600px;
+}
+
+/*　　　ヘッダーのナビのBeefとVegetableのアイコン      */
+    #nav{
+        margin : 0 50px auto 50px;
+        background : black;
+        width : 90%;
+        height : 80px;
+        min-width: 1000px;
+       } 
+    #nav ul {
+              display : block;
+              width : 90%;
+              height : auto;
+              color : white;
+            }
+    #nav ul h1{display : block;
+               margin : auto 0;
+               font-size : 65px;
+               font-family: fantasy;
+               padding: 6px 0;
+               text-align: center;
+              }
+    
+
+
+ /*　　　　トップ画像のスライドショー　　　 */
+ .header {
+  min-width: 850px;   
+  height : auto;
+  display: flex;  
+  margin-bottom: 100px;
+         }
+
+
+ .header .slide {
+  margin: 10px auto auto 50px;
+  padding: 25px;
+  width: 50%;
+  background: black;
+                 }
+                      
+.header .aside{
+        width : 50%;
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+              }   
+
+.beef-button{font-size : 40px;
+             text-align: center;
+             background-color:red;
+             margin-bottom : 8px;
+             font-family: fantasy;
+             width : 50%;
+            }
+
+.beef-button :hover{opacity: 0.7;}
+.vegetable-button{font-size : 40px;
+                  background-color: greenyellow;
+                  font-family: fantasy;
+                  width : 50%;
+                 }
+ .vegetable-button :hover{opacity: 0.7;}               
+
+
+
+/*                                          牛肉の説明　　                                                　*/   
+#beef{color : white;
+      width : 80%;
+      height : auto;
+      margin : auto;
+     }
+    
+#beef h2,p{text-align: center;
+           padding : 10px 20px;
+           margin : 0 auto;
+            }
+
+
+
+
+
+.content {
+  min-width:1000px;
+  flex-direction: column;
+
+}
+.content :nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+.content1,.content2,.content3 {
+  height : 50%;
+  width : auto;
+  padding : 20px;
+  margin : 5px;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+  }
+  
+  .content1.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  .content2.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  .content3.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+
+.meat{  display : flex;
+     }
+
+.meat img,.text1,.text2,.text3 { border: 3px solid black; }
+.meat img{ display: inline-block;
+           height : 340px;
+           width : 300px;
+           object-fit:cover;
+          }
+
+
+
+/*      サーロイン     */
+.sirloin {
+  display:block;
+  float : left;
+  margin:0px auto;
+}
+.text1{
+  display:  block;
+  padding:50px; 
+  background-color: white;
+  border-radius: 50px;
+
+}
+.sirloin-text{
+  margin:0px 0px 40px 0px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+} 
+
+
+
+/*   イチボ    */
+.ichibo{
+  display:block;
+  float : left;
+  margin:0px auto;
+}
+.text2{
+  display:  block;
+  padding:50px; 
+  background-color: white;
+  border-radius: 50px;
+
+}
+.ichibo-text{
+  margin:0px 0px 40px 0px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+} 
+
+
+
+/*      すじ肉　　　　　*/
+.top-round{
+  display:block;
+  float : left;
+  margin:0px auto;
+}
+.text3{
+  display:  block;
+  padding:50px; 
+  background-color: white;
+  border-radius: 50px;
+}
+.top-round-text{
+  margin:0px 0px 40px 0px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+} 
+
+
+
+
+/*                                                       野菜の説明                                                             */
+.vegetable-int{content : '';
+    display : flex;
+    flex-direction : row;
+ }
+
+ #vegetable{color: white;
+  width : 80%;
+  height : auto;
+  margin : auto;
+ }
+
+ #vegetable h2,p{
+   text-align: center;
+  padding : 10px 20px;
+   }
+
+
+ .vegetable-all{
+   display: flex;
+   width : 100%;
+   height : auto;   
+  }
+
+.vege-content{width : 100%;
+              height : 300px;
+              display: flex;
+              margin: auto;
+              list-style: none;
+              }
+.vege-content .thum1 img,.thum2 img,.thum3 img,.thum4 img{
+                  display: inline-block;
+                  flex-direction: column;
+                  width : 63px;
+                  height : 63px;
+                  object-fit: cover;
+                  margin-left: 10px;
+                  border: 3px solid black;
+}               
+.vege-content .main img{
+                    display: inline-block;
+                    width : 215px;
+                    height : 215px;
+                    object-fit: cover;
+                    margin-left: 10px;
+                    border: 3px solid black;
+                       }
+
+  
+
+
+
+
+
+/*       プロフィール       */
+
+.profile{width : 100%;
+         height : 350px;
+         margin : none;
+        background-color: rgb(230, 223, 223);
+        }
+
+.profile .profile-all{  
+            display: flex;
+            width : 100%;
+                     }
+.profile h2{font-style: fantasy;
+            font-size: 2em;
+            padding-top: 30px;
+            height : 10px;           }
+
+.profile #content{
+            width : 60%;
+                 }
+
+.profile #content-aside{
+                width : 40%;
+                padding-top: 70px;
+}
+                              
+.profile .aside{
+                width : 100%;
+                display: flex;
+                margin : auto;
+                font-family: fantasy;
+                justify-content: center;
+               }
+
+.profile .aside　a{
+  flex-direction: row;
+                  }
+
+.mail{margin-right : 50px;
+      padding : auto 50px;
+     }
+
+.to-top{margin-left: 40px;
+        padding-top : 30px;
+      }
+
+
+
+/*　　　　フッター      */
+
+
+.wrapper{
+         margin : none;
+         background : black;
+         text-align : center;
+        }
+
+.wrapper p{text-align : center;
+           font-size : 0.8rem;
+           color : white;
+          }
+
